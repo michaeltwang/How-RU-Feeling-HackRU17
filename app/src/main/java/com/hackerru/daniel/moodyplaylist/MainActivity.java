@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import com.spotify.sdk.android.authentication.AuthenticationClient;
 import com.spotify.sdk.android.authentication.AuthenticationRequest;
@@ -21,6 +23,31 @@ import static com.spotify.sdk.android.authentication.LoginActivity.REQUEST_CODE;
 
 public class MainActivity extends Activity implements SpotifyPlayer.NotificationCallback, ConnectionStateCallback
 {
+
+
+
+    Button Sad = (Button) findViewById(R.id.Sad);
+    Button Happy = (Button) findViewById(R.id.Happy);
+    Button Sleepy = (Button) findViewById(R.id.Sleepy);
+    Button Love = (Button) findViewById(R.id.Love);
+
+    @Override
+    protected void onCreate(Bundle saveInstanceState) {
+
+
+//Intent i = new Intent(.this, MainActivity.class);
+        //startActivity(i);LoginActivity
+        Sad.setOnClickListener(new View.OnClickListener()
+                Button Happy = (Button) findViewById(R.id.Happy);
+
+        Happy.setOnClickListener(new View.OnClickListener() {
+    }
+});
+
+
+
+
+
     private static final int REQUEST_CODE = 1337;
 
     // TODO: Replace with your client ID
@@ -120,4 +147,5 @@ public class MainActivity extends Activity implements SpotifyPlayer.Notification
     public void onConnectionMessage(String message) {
         Log.d("MainActivity", "Received connection message: " + message);
     }
+
 }

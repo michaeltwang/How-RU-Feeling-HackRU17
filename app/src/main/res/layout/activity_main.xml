@@ -18,7 +18,7 @@
         app:layout_constraintVertical_bias="0.08" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Sad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Feeling Sad"
@@ -26,7 +26,7 @@
         tools:layout_editor_absoluteY="88dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/Happy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Feeling Happy"
@@ -34,7 +34,7 @@
         tools:layout_editor_absoluteY="231dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/Sleepy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Feeling Sleepy"
@@ -42,7 +42,7 @@
         tools:layout_editor_absoluteY="88dp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/Love"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Feeling the Love"
