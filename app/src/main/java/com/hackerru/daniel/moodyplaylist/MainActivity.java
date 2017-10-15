@@ -27,17 +27,6 @@ public class MainActivity extends Activity //implements SpotifyPlayer.Notificati
 {
 
 
-/*
-    private static final int REQUEST_CODE = 1337;
-
-    // TODO: Replace with your client ID
-    private static final String CLIENT_ID = "yourclientid";
-    // TODO: Replace with your redirect URI
-    private static final String REDIRECT_URI = "yourcustomprotocol://callback";
-
-    private Player mPlayer;
-
-*/
 @Override
 public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -46,7 +35,7 @@ public void onCreate(Bundle savedInstanceState) {
 }
 
     public void goToSad (View view) {
-        goToUrl ( "http://stackoverflow.com/");
+        setContentView(R.layout.sms_message);
     }
 
     public void goToSleepy (View view) {
@@ -58,6 +47,7 @@ public void onCreate(Bundle savedInstanceState) {
     }
     public void goToLove(View view) {
         goToUrl ( "http://bing.com/");
+
     }
 
     private void goToUrl (String url) {
