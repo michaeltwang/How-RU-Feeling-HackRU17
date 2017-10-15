@@ -32,14 +32,9 @@ public void onCreate(Bundle savedInstanceState) {
     setContentView(R.layout.activity_main);
 }
 
-<<<<<<< HEAD
 
-=======
-    public void goToSad (View view) {
-        Intent intent = new Intent(this, SMSMessage.class);
-        startActivity(intent);
-    }
->>>>>>> 806f2f7e9f9968aa4a047b9ebf8417c057634720
+
+
 
     public void goToSleepy (View view) {
         goToUrl ( "http://www.rwjuh.edu/sleepcenter/contactsfl.aspx");
@@ -66,7 +61,7 @@ public void onCreate(Bundle savedInstanceState) {
     }
 
     public void goToSad (View view) {
-        setContentView(R.layout.sms_message);
+        //setContentView(R.layout.sms_message);
         Intent intent = new Intent(this, SMSMessage.class);
         startActivity(intent);
     }
