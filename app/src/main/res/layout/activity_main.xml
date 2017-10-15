@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
-    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" I am..." />
     <Button
         android:layout_height="wrap_content"
         android:clickable="true"
@@ -39,6 +39,34 @@
         android:id="@+id/button_love"
         android:onClick="goToLove"
         ></Button>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="feeling Unmotivated"
+        android:autoLink="web"
+        android:clickable="true"
+        android:id="@+id/button_unmotivated"
+        android:onClick="goToUnmotivated"
+        ></Button>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="feeling Triumphant"
+        android:autoLink="web"
+        android:clickable="true"
+        android:id="@+id/button_triumphant"
+        android:onClick="goToTriumphant"
+        ></Button>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="in an Emergency!"
+        android:autoLink="web"
+        android:clickable="true"
+        android:id="@+id/button_emergency"
+        android:onClick="goToEmergency"
+        ></Button>
+
 </LinearLayout>
 
 

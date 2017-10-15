@@ -51,12 +51,26 @@ public void onCreate(Bundle savedInstanceState) {
         goToUrl ( "http://bing.com/");
 
     }
+    public void goToUnmotivated(View view) {
+        goToUrl ( "https://www.youtube.com/watch?v=oXYMG5LOQ2Q");
+
+    }
+    public void goToTriumphant(View view) {
+        goToUrl ( "https://www.youtube.com/watch?v=gPp_82l0j6s");
+
+    }
+    public void goToEmergency(View view) {
+        goToUrl ( "http://rhscaps.rutgers.edu/services/need-help-now/#1450288396557-018d59d0-8ad5");
+
+    }
+
 
     private void goToUrl (String url) {
         Uri uriUrl = Uri.parse(url);
         Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
         startActivity(launchBrowser);
     }
+
 }
 
 
