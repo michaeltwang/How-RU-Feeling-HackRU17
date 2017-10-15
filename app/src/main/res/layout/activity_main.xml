@@ -1,71 +1,218 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
     <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" I am..." />
+
+    <RelativeLayout
+        android:id="@+id/headerLinearLay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button_sad"
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:clickable="true"
+            android:cursorVisible="true"
+            android:linksClickable="true"
+            android:onClick="goToSad"
+            android:text="Feeling Sad"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"></Button>
+        <ImageView
+            android:id="@+id/add_contact_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button_sad"
+            android:layout_toEndOf="@+id/button_sad" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headerLinearLay1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
     <Button
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:autoLink="web"
-        android:cursorVisible="true"
-        android:layout_width="match_parent"
-        android:id="@+id/button_sad"
-        android:text="Feeling Sad"
-        android:linksClickable="true"
-        android:onClick="goToSad"
-        ></Button>
-    <Button
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:text="Feeling Sleepy"
-        android:autoLink="web"
-        android:clickable="true"
         android:id="@+id/button_sleepy"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:clickable="true"
         android:onClick="goToSleepy"
-        ></Button>
-    <Button
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:text="Feeling Happy"
-        android:autoLink="web"
-        android:clickable="true"
-        android:id="@+id/button_happy"
-        android:onClick="goToHappy"
-        ></Button>
-    <Button
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:text="Feeling the Love"
-        android:autoLink="web"
-        android:clickable="true"
-        android:id="@+id/button_love"
-        android:onClick="goToLove"
-        ></Button>
-    <Button
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:text="feeling Unmotivated"
-        android:autoLink="web"
-        android:clickable="true"
-        android:id="@+id/button_unmotivated"
-        android:onClick="goToUnmotivated"
-        ></Button>
-    <Button
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:text="feeling Triumphant"
-        android:autoLink="web"
-        android:clickable="true"
-        android:id="@+id/button_triumphant"
-        android:onClick="goToTriumphant"
-        ></Button>
-    <Button
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:text="in an Emergency!"
-        android:autoLink="web"
-        android:clickable="true"
-        android:id="@+id/button_emergency"
-        android:onClick="goToEmergency"
-        ></Button>
+        android:text="Feeling Sleepy"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></Button>
+        <ImageView
+            android:id="@+id/add_contact_image_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button_sleepy"
+            android:layout_toEndOf="@+id/button_sleepy" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headerLinearLay2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button_happy"
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:clickable="true"
+            android:onClick="goToHappy"
+            android:text="Feeling Happy"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"></Button>
+        <ImageView
+            android:id="@+id/add_contact_image_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button_happy"
+            android:layout_toEndOf="@+id/button_happy" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headerLinearLay3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button_love"
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:clickable="true"
+            android:onClick="goToLove"
+            android:text="Feeling the Love"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"></Button>
+        <ImageView
+            android:id="@+id/add_contact_image_view3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button_love"
+            android:layout_toEndOf="@+id/button_love" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headerLinearLay4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button_unmotivated"
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:clickable="true"
+            android:onClick="goToUnmotivated"
+            android:text="Feeling Unmotivated"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"></Button>
+        <ImageView
+            android:id="@+id/add_contact_image_view4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button_unmotivated"
+            android:layout_toEndOf="@+id/button_unmotivated" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headerLinearLay5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button_triumphant"
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:clickable="true"
+            android:onClick="goToTriumphant"
+            android:text="Feeling Triumphant"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"></Button>
+        <ImageView
+            android:id="@+id/add_contact_image_view5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button_triumphant"
+            android:layout_toEndOf="@+id/button_triumphant" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headerLinearLay6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button_emergency"
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:clickable="true"
+            android:onClick="goToEmergency"
+            android:text="In an EMERGENCY!"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"></Button>
+        <ImageView
+            android:id="@+id/add_contact_image_view6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button_emergency"
+            android:layout_toEndOf="@+id/button_emergency" />
+    </RelativeLayout>
 
 </LinearLayout>
 

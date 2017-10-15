@@ -45,7 +45,7 @@ public void onCreate(Bundle savedInstanceState) {
     }
 
     public void goToHappy (View view) {
-        goToUrl ( "http://google.com/");
+        goToUrl ( "https://www.youtube.com/watch?v=TX3wB9lSDj4");
     }
     public void goToLove(View view) {
         goToUrl ( "http://maps.rutgers.edu/location/passion-puddle");
