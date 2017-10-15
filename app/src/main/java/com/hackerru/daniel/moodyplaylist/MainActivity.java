@@ -19,7 +19,6 @@ import com.spotify.sdk.android.player.Player;
 import com.spotify.sdk.android.player.PlayerEvent;
 import com.spotify.sdk.android.player.Spotify;
 import com.spotify.sdk.android.player.SpotifyPlayer;
-import com.twitter.sdk.android.core.Twitter;
 
 import static com.spotify.sdk.android.authentication.LoginActivity.REQUEST_CODE;
 
@@ -31,14 +30,16 @@ public class MainActivity extends Activity //implements SpotifyPlayer.Notificati
 public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-    Twitter.initialize(this);
 }
 
+<<<<<<< HEAD
+
+=======
     public void goToSad (View view) {
-        setContentView(R.layout.sms_message);
         Intent intent = new Intent(this, SMSMessage.class);
         startActivity(intent);
     }
+>>>>>>> 806f2f7e9f9968aa4a047b9ebf8417c057634720
 
     public void goToSleepy (View view) {
         goToUrl ( "http://www.rwjuh.edu/sleepcenter/contactsfl.aspx");
@@ -62,6 +63,18 @@ public void onCreate(Bundle savedInstanceState) {
     public void goToEmergency(View view) {
         goToUrl ( "http://rhscaps.rutgers.edu/services/need-help-now/#1450288396557-018d59d0-8ad5");
 
+    }
+
+    public void goToSad (View view) {
+        setContentView(R.layout.sms_message);
+        Intent intent = new Intent(this, SMSMessage.class);
+        startActivity(intent);
+    }
+
+    public void goToSMS (View view) {
+        setContentView(R.layout.sms_message);
+        Intent intent = new Intent(this, SMSMessage.class);
+        startActivity(intent);
     }
 
 

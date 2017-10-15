@@ -2,37 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
     <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" I am..." />
 
-    <RelativeLayout
-        android:id="@+id/headerLinearLay"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/button_sad"
-            android:layout_width="272dp"
-            android:layout_height="60dp"
-            android:autoLink="web"
-            android:clickable="true"
-            android:cursorVisible="true"
-            android:linksClickable="true"
-            android:onClick="goToSad"
-            android:text="Feeling Sad"
-            android:layout_marginLeft="11dp"
-            android:layout_marginStart="11dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"></Button>
-        <ImageView
-            android:id="@+id/add_contact_image_view"
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            android:layout_gravity="right"
-            android:src="@mipmap/sad"
-            android:layout_marginLeft="11dp"
-            android:layout_marginStart="11dp"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/button_sad"
-            android:layout_toEndOf="@+id/button_sad" />
-    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/headerLinearLay1"
@@ -191,6 +160,39 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/headerLinearLay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button_sad"
+            android:layout_width="272dp"
+            android:layout_height="60dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:cursorVisible="true"
+            android:linksClickable="true"
+            android:onClick="goToSad"
+            android:text="Feeling Sad"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"></Button>
+        <ImageView
+            android:id="@+id/add_contact_image_view"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="right"
+            android:src="@mipmap/sad"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/button_sad"
+            android:layout_toEndOf="@+id/button_sad" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
         android:id="@+id/headerLinearLay6"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
@@ -219,7 +221,24 @@
             android:layout_toRightOf="@+id/button_emergency"
             android:layout_toEndOf="@+id/button_emergency" />
     </RelativeLayout>
-
+    <RelativeLayout
+        android:id="@+id/headerLinearLay7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button_sms"
+            android:layout_width="272dp"
+            android:layout_height="60dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:onClick="goToSMS"
+            android:text="Message a Rutgers friend :)"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"></Button>
+    </RelativeLayout>
 </LinearLayout>
 
 
