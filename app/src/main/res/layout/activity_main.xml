@@ -8,14 +8,14 @@
         android:cursorVisible="true"
         android:layout_width="match_parent"
         android:id="@+id/button_sad"
-        android:text="Sad"
+        android:text="Feeling Sad"
         android:linksClickable="true"
         android:onClick="goToSad"
         ></Button>
     <Button
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:text="Sleepy"
+        android:text="Feeling Sleepy"
         android:autoLink="web"
         android:clickable="true"
         android:id="@+id/button_sleepy"
@@ -24,7 +24,7 @@
     <Button
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:text="Sleepy"
+        android:text="Feeling Happy"
         android:autoLink="web"
         android:clickable="true"
         android:id="@+id/button_happy"
@@ -33,7 +33,7 @@
     <Button
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:text="Sleepy"
+        android:text="Feeling the Love"
         android:autoLink="web"
         android:clickable="true"
         android:id="@+id/button_love"
