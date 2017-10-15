@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".SMSMessage">
+        <activity android:name=".SMSMessage"
+            android:parentActivityName=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>

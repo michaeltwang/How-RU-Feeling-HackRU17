@@ -19,7 +19,6 @@ import com.spotify.sdk.android.player.Player;
 import com.spotify.sdk.android.player.PlayerEvent;
 import com.spotify.sdk.android.player.Spotify;
 import com.spotify.sdk.android.player.SpotifyPlayer;
-import com.twitter.sdk.android.core.Twitter;
 
 import static com.spotify.sdk.android.authentication.LoginActivity.REQUEST_CODE;
 
@@ -31,11 +30,9 @@ public class MainActivity extends Activity //implements SpotifyPlayer.Notificati
 public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-    Twitter.initialize(this);
 }
 
     public void goToSad (View view) {
-        setContentView(R.layout.sms_message);
         Intent intent = new Intent(this, SMSMessage.class);
         startActivity(intent);
     }
