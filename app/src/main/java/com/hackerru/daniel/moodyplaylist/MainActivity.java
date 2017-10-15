@@ -22,11 +22,11 @@ import com.spotify.sdk.android.player.SpotifyPlayer;
 
 import static com.spotify.sdk.android.authentication.LoginActivity.REQUEST_CODE;
 
-public class MainActivity extends Activity implements SpotifyPlayer.NotificationCallback, ConnectionStateCallback
+public class MainActivity extends Activity //implements SpotifyPlayer.NotificationCallback, ConnectionStateCallback
 {
 
 
-
+/*
     private static final int REQUEST_CODE = 1337;
 
     // TODO: Replace with your client ID
@@ -36,59 +36,74 @@ public class MainActivity extends Activity implements SpotifyPlayer.Notification
 
     private Player mPlayer;
 
+*/
+
+    Button Sad = (Button) findViewById(R.id.Sad);
+    Button Happy = (Button) findViewById(R.id.Happy);
+    Button Sleepy = (Button) findViewById(R.id.Sleepy);
+    Button Love = (Button) findViewById(R.id.Love);
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+
+
+
+
+        Sad.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        //here comes the code - intent
+
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse("http://www.youtube.com"));
+        startActivity(i);
+    }
+});
+
+
+        Happy.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse("http://www.google.com"));
+        startActivity(i);
+
+    }
+});
+
+        Sleepy.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        //here comes the code - intent
+
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse("http://www.twitter.com"));
+        startActivity(i);
+    }
+});
+
+ Love.setOnClickListener(new View.OnClickListener()
+    {
+    @Override
+    public void onClick(View v) {
+        //here comes the code - intent
+
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse("http://www.bing.com"));
+        startActivity(i);
+    }
+});
+
+
+
+
 
 //Intent i = new Intent(.this, MainActivity.class);
         //startActivity(i);LoginActivity
-        Button Sad = (Button) findViewById(R.id.Sad);
-        Sad.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //here comes the code - intent
-
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse("http://www.youtube.com"));
-                startActivity(i);
-            }
-        });
-
-        Button Happy = (Button) findViewById(R.id.Happy);
-        Happy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse("http://www.google.com"));
-                startActivity(i);
-
-            }
-        });
-        Button Sleepy = (Button) findViewById(R.id.Sleepy);
-        Sleepy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //here comes the code - intent
-
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse("http://www.twitter.com"));
-                startActivity(i);
-            }
-        });
-
-        Button Love = (Button) findViewById(R.id.Love);
-        Love.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //here comes the code - intent
-
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse("http://www.bing.com"));
-                startActivity(i);
-            }
-        });
 
 
+/*
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -177,5 +192,7 @@ public class MainActivity extends Activity implements SpotifyPlayer.Notification
     public void onConnectionMessage(String message) {
         Log.d("MainActivity", "Received connection message: " + message);
     }
+*/
+}}
 
-}
+
