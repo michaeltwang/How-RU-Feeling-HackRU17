@@ -1,0 +1,5 @@
+We got the code for the SMS messaging from this website:
+
+https://www.androidtutorialpoint.com/basics/send-sms-programmatically-android-tutorial/
+
+We did not originally create this code, but we did implement it and modified it to work the way we wanted it to for our project.
