@@ -9,7 +9,7 @@
         <Button
             android:id="@+id/button_sad"
             android:layout_width="272dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:autoLink="web"
             android:clickable="true"
             android:cursorVisible="true"
@@ -23,13 +23,13 @@
             android:layout_marginStart="16dp"></Button>
         <ImageView
             android:id="@+id/add_contact_image_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:layout_gravity="right"
-            android:src="@mipmap/ic_launcher"
-            android:layout_marginLeft="23dp"
-            android:layout_marginStart="23dp"
-            android:layout_alignParentTop="true"
+            android:src="@mipmap/sad"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/button_sad"
             android:layout_toEndOf="@+id/button_sad" />
     </RelativeLayout>
@@ -38,30 +38,32 @@
         android:id="@+id/headerLinearLay1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
-    <Button
-        android:id="@+id/button_sleepy"
-        android:layout_width="272dp"
-        android:layout_height="wrap_content"
-        android:autoLink="web"
-        android:clickable="true"
-        android:onClick="goToSleepy"
-        android:text="Feeling Sleepy"
-        android:layout_marginLeft="17dp"
-        android:layout_marginStart="17dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"></Button>
+
+        <Button
+            android:id="@+id/button_sleepy"
+            android:layout_width="272dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:onClick="goToSleepy"
+            android:text="Feeling Sleepy"></Button>
+
         <ImageView
             android:id="@+id/add_contact_image_view1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
             android:layout_gravity="right"
-            android:src="@mipmap/ic_launcher"
-            android:layout_marginLeft="23dp"
-            android:layout_marginStart="23dp"
-            android:layout_alignParentTop="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_toEndOf="@+id/button_sleepy"
             android:layout_toRightOf="@+id/button_sleepy"
-            android:layout_toEndOf="@+id/button_sleepy" />
+            android:src="@mipmap/sleepy" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -71,7 +73,7 @@
         <Button
             android:id="@+id/button_happy"
             android:layout_width="272dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:autoLink="web"
             android:clickable="true"
             android:onClick="goToHappy"
@@ -83,13 +85,13 @@
             android:layout_alignParentStart="true"></Button>
         <ImageView
             android:id="@+id/add_contact_image_view2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:layout_gravity="right"
-            android:src="@mipmap/ic_launcher"
-            android:layout_marginLeft="23dp"
-            android:layout_marginStart="23dp"
-            android:layout_alignParentTop="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:src="@mipmap/happy"
+            android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/button_happy"
             android:layout_toEndOf="@+id/button_happy" />
     </RelativeLayout>
@@ -101,7 +103,7 @@
         <Button
             android:id="@+id/button_love"
             android:layout_width="272dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:autoLink="web"
             android:clickable="true"
             android:onClick="goToLove"
@@ -113,12 +115,12 @@
             android:layout_alignParentStart="true"></Button>
         <ImageView
             android:id="@+id/add_contact_image_view3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:layout_gravity="right"
-            android:src="@mipmap/ic_launcher"
-            android:layout_marginLeft="23dp"
-            android:layout_marginStart="23dp"
+            android:src="@mipmap/love"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@+id/button_love"
             android:layout_toEndOf="@+id/button_love" />
@@ -128,27 +130,29 @@
         android:id="@+id/headerLinearLay4"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
+
         <Button
             android:id="@+id/button_unmotivated"
             android:layout_width="272dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
             android:autoLink="web"
             android:clickable="true"
             android:onClick="goToUnmotivated"
-            android:text="Feeling Unmotivated"
-            android:layout_marginLeft="17dp"
-            android:layout_marginStart="17dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"></Button>
+            android:text="Feeling Unmotivated"></Button>
+
         <ImageView
             android:id="@+id/add_contact_image_view4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:layout_gravity="right"
-            android:src="@mipmap/ic_launcher"
-            android:layout_marginLeft="23dp"
-            android:layout_marginStart="23dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:src="@mipmap/unmotivated"
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@+id/button_unmotivated"
             android:layout_toEndOf="@+id/button_unmotivated" />
@@ -158,28 +162,30 @@
         android:id="@+id/headerLinearLay5"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
+
         <Button
             android:id="@+id/button_triumphant"
             android:layout_width="272dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
             android:autoLink="web"
             android:clickable="true"
             android:onClick="goToTriumphant"
-            android:text="Feeling Triumphant"
-            android:layout_marginLeft="17dp"
-            android:layout_marginStart="17dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"></Button>
+            android:text="Feeling Triumphant"></Button>
+
         <ImageView
             android:id="@+id/add_contact_image_view5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:layout_gravity="right"
-            android:src="@mipmap/ic_launcher"
-            android:layout_marginLeft="23dp"
-            android:layout_marginStart="23dp"
-            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:src="@mipmap/triumphant"
+            android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/button_triumphant"
             android:layout_toEndOf="@+id/button_triumphant" />
     </RelativeLayout>
@@ -191,7 +197,7 @@
         <Button
             android:id="@+id/button_emergency"
             android:layout_width="272dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:autoLink="web"
             android:clickable="true"
             android:onClick="goToEmergency"
@@ -203,13 +209,13 @@
             android:layout_alignParentStart="true"></Button>
         <ImageView
             android:id="@+id/add_contact_image_view6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:layout_gravity="right"
-            android:src="@mipmap/ic_launcher"
-            android:layout_marginLeft="23dp"
-            android:layout_marginStart="23dp"
-            android:layout_alignParentTop="true"
+            android:src="@mipmap/emergency"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/button_emergency"
             android:layout_toEndOf="@+id/button_emergency" />
     </RelativeLayout>
