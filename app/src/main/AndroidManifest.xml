@@ -21,5 +21,8 @@
 
     <uses-permission android:name="android.permission.SEND_SMS" />
 
-
+    <resources>
+        <string android:name="com.twitter.sdk.android.CONSUMER_KEY">leU3AdNcwUA0A9AQTEjBTLNO5</string>
+        <string android:name="com.twitter.sdk.android.CONSUMER_SECRET">5VEGt4XYGulxt1jk5L5OIEWNWRty7X6ANv2FrgQxcwZPDgUyuL</string>
+    </resources>
 </manifest>

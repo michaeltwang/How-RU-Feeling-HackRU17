@@ -24,6 +24,7 @@ repositories {
     flatDir {
         dirs 'libs'
     }
+    jcenter()
 }
 
 dependencies {
@@ -43,4 +44,9 @@ dependencies {
 
     // All other dependencies for your app should also be here:
     compile 'com.android.support:appcompat-v7:23.1.1'
+
+    // Include all the Twitter APIs
+    compile 'com.twitter.sdk.android:twitter:3.1.1'
+    // (Optional) Monetize using mopub
+    compile 'com.twitter.sdk.android:twitter-mopub:3.1.1'
 }
