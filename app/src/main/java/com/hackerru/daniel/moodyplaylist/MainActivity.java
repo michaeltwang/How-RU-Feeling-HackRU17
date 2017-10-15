@@ -26,7 +26,7 @@ public class MainActivity extends Activity implements SpotifyPlayer.Notification
 
 
 
-    Button Sad = (Button) findViewById(R.id.Sad);
+    Button Sad;
     Button Happy = (Button) findViewById(R.id.Happy);
     Button Sleepy = (Button) findViewById(R.id.Sleepy);
     Button Love = (Button) findViewById(R.id.Love);
@@ -37,12 +37,27 @@ public class MainActivity extends Activity implements SpotifyPlayer.Notification
 
 //Intent i = new Intent(.this, MainActivity.class);
         //startActivity(i);LoginActivity
-        Sad.setOnClickListener(new View.OnClickListener()
+        Sad = (Button) findViewById(R.id.Sad);
+        Sad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //here comes the code - intent
+
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse("http://www.youtube.com"));
+                startActivity(i);
+            }
+        });
                 Button Happy = (Button) findViewById(R.id.Happy);
 
         Happy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+            }
+        });
     }
-});
 
 
 
