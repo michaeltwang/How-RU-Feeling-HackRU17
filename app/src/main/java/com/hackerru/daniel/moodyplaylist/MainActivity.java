@@ -41,14 +41,14 @@ public void onCreate(Bundle savedInstanceState) {
     }
 
     public void goToSleepy (View view) {
-        goToUrl ( "http://superuser.com/");
+        goToUrl ( "http://www.rwjuh.edu/sleepcenter/contactsfl.aspx");
     }
 
     public void goToHappy (View view) {
         goToUrl ( "http://google.com/");
     }
     public void goToLove(View view) {
-        goToUrl ( "http://bing.com/");
+        goToUrl ( "http://maps.rutgers.edu/location/passion-puddle");
 
     }
     public void goToUnmotivated(View view) {
