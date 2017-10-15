@@ -2,6 +2,7 @@ package com.hackerru.daniel.moodyplaylist;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -26,18 +27,16 @@ public class MainActivity extends Activity implements SpotifyPlayer.Notification
 
 
 
-    Button Sad;
-    Button Happy = (Button) findViewById(R.id.Happy);
-    Button Sleepy = (Button) findViewById(R.id.Sleepy);
+
     Button Love = (Button) findViewById(R.id.Love);
 
     @Override
-    protected void onCreate(Bundle saveInstanceState) {
-
+    protected void onCreateURL(Bundle saveInstanceState) {
+        super.onCreate(saveInstanceState);
 
 //Intent i = new Intent(.this, MainActivity.class);
         //startActivity(i);LoginActivity
-        Sad = (Button) findViewById(R.id.Sad);
+        Button Sad = (Button) findViewById(R.id.Sad);
         Sad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,13 +47,38 @@ public class MainActivity extends Activity implements SpotifyPlayer.Notification
                 startActivity(i);
             }
         });
-                Button Happy = (Button) findViewById(R.id.Happy);
 
+        Button Happy = (Button) findViewById(R.id.Happy);
         Happy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse("http://www.youtube.com"));
+                startActivity(i);
 
+            }
+        });
+        Button Sleepy = (Button) findViewById(R.id.Sleepy);
+        Sleepy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //here comes the code - intent
 
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse("http://www.youtube.com"));
+                startActivity(i);
+            }
+        });
+
+        Button Love = (Button) findViewById(R.id.Love);
+        Love.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //here comes the code - intent
+
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse("http://www.youtube.com"));
+                startActivity(i);
             }
         });
     }
