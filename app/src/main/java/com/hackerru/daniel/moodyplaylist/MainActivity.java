@@ -37,7 +37,37 @@ public class MainActivity extends Activity //implements SpotifyPlayer.Notificati
     private Player mPlayer;
 
 */
+@Override
+public void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+}
 
+    public void goToSad (View view) {
+        goToUrl ( "http://stackoverflow.com/");
+    }
+
+    public void goToSleepy (View view) {
+        goToUrl ( "http://superuser.com/");
+    }
+
+    public void goToHappy (View view) {
+        goToUrl ( "http://google.com/");
+    }
+    public void goToLove(View view) {
+        goToUrl ( "http://bing.com/");
+    }
+
+    private void goToUrl (String url) {
+        Uri uriUrl = Uri.parse(url);
+        Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+        startActivity(launchBrowser);
+    }
+
+
+
+
+    /*
     Button Sad = (Button) findViewById(R.id.Sad);
     Button Happy = (Button) findViewById(R.id.Happy);
     Button Sleepy = (Button) findViewById(R.id.Sleepy);
@@ -96,7 +126,7 @@ protected void onCreate(Bundle savedInstanceState) {
 });
 
 
-
+*/
 
 
 //Intent i = new Intent(.this, MainActivity.class);
@@ -193,6 +223,6 @@ protected void onCreate(Bundle savedInstanceState) {
         Log.d("MainActivity", "Received connection message: " + message);
     }
 */
-}}
+}
 
 

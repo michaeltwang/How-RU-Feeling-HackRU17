@@ -1,4 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" />
+    <Button
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:autoLink="web"
+        android:cursorVisible="true"
+        android:layout_width="match_parent"
+        android:id="@+id/button_sad"
+        android:text="Sad"
+        android:linksClickable="true"
+        android:onClick="goToSad"
+        ></Button>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Sleepy"
+        android:autoLink="web"
+        android:clickable="true"
+        android:id="@+id/button_sleepy"
+        android:onClick="goToSleepy"
+        ></Button>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Sleepy"
+        android:autoLink="web"
+        android:clickable="true"
+        android:id="@+id/button_happy"
+        android:onClick="goToHappy"
+        ></Button>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Sleepy"
+        android:autoLink="web"
+        android:clickable="true"
+        android:id="@+id/button_love"
+        android:onClick="goToLove"
+        ></Button>
+</LinearLayout>
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -64,3 +108,4 @@
         app:layout_constraintVertical_bias="0.768" />
 
 </android.support.constraint.ConstraintLayout>
+/*-->
