@@ -16,19 +16,19 @@
             android:linksClickable="true"
             android:onClick="goToSad"
             android:text="Feeling Sad"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="16dp"
-            android:layout_marginStart="16dp"></Button>
+            android:layout_alignParentStart="true"></Button>
         <ImageView
             android:id="@+id/add_contact_image_view"
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:layout_gravity="right"
             android:src="@mipmap/sad"
-            android:layout_marginLeft="18dp"
-            android:layout_marginStart="18dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/button_sad"
             android:layout_toEndOf="@+id/button_sad" />
@@ -43,27 +43,27 @@
             android:id="@+id/button_sleepy"
             android:layout_width="272dp"
             android:layout_height="60dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="17dp"
-            android:layout_marginStart="17dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
             android:autoLink="web"
             android:clickable="true"
             android:onClick="goToSleepy"
-            android:text="Feeling Sleepy"></Button>
+            android:text="Feeling Sleepy"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"></Button>
 
         <ImageView
             android:id="@+id/add_contact_image_view1"
             android:layout_width="55dp"
             android:layout_height="55dp"
-            android:layout_centerVertical="true"
             android:layout_gravity="right"
-            android:layout_marginLeft="17dp"
-            android:layout_marginStart="17dp"
-            android:layout_toEndOf="@+id/button_sleepy"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:src="@mipmap/sleepy"
+            android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/button_sleepy"
-            android:src="@mipmap/sleepy" />
+            android:layout_toEndOf="@+id/button_sleepy" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -78,8 +78,8 @@
             android:clickable="true"
             android:onClick="goToHappy"
             android:text="Feeling Happy"
-            android:layout_marginLeft="17dp"
-            android:layout_marginStart="17dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"></Button>
@@ -88,8 +88,8 @@
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:layout_gravity="right"
-            android:layout_marginLeft="17dp"
-            android:layout_marginStart="17dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
             android:src="@mipmap/happy"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/button_happy"
@@ -108,8 +108,8 @@
             android:clickable="true"
             android:onClick="goToLove"
             android:text="Feeling the Love"
-            android:layout_marginLeft="17dp"
-            android:layout_marginStart="17dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"></Button>
@@ -119,9 +119,9 @@
             android:layout_height="55dp"
             android:layout_gravity="right"
             android:src="@mipmap/love"
-            android:layout_marginLeft="17dp"
-            android:layout_marginStart="17dp"
-            android:layout_alignParentTop="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/button_love"
             android:layout_toEndOf="@+id/button_love" />
     </RelativeLayout>
@@ -135,25 +135,25 @@
             android:id="@+id/button_unmotivated"
             android:layout_width="272dp"
             android:layout_height="60dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="17dp"
-            android:layout_marginStart="17dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
             android:autoLink="web"
             android:clickable="true"
             android:onClick="goToUnmotivated"
-            android:text="Feeling Unmotivated"></Button>
+            android:text="Feeling Unmotivated"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"></Button>
 
         <ImageView
             android:id="@+id/add_contact_image_view4"
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:layout_gravity="right"
-            android:layout_marginLeft="15dp"
-            android:layout_marginStart="15dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
             android:src="@mipmap/unmotivated"
-            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/button_unmotivated"
             android:layout_toEndOf="@+id/button_unmotivated" />
     </RelativeLayout>
@@ -167,23 +167,23 @@
             android:id="@+id/button_triumphant"
             android:layout_width="272dp"
             android:layout_height="60dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="17dp"
-            android:layout_marginStart="17dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
             android:autoLink="web"
             android:clickable="true"
             android:onClick="goToTriumphant"
-            android:text="Feeling Triumphant"></Button>
+            android:text="Feeling Triumphant"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"></Button>
 
         <ImageView
             android:id="@+id/add_contact_image_view5"
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:layout_gravity="right"
-            android:layout_marginLeft="15dp"
-            android:layout_marginStart="15dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
             android:src="@mipmap/triumphant"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/button_triumphant"
@@ -202,8 +202,8 @@
             android:clickable="true"
             android:onClick="goToEmergency"
             android:text="In an EMERGENCY!"
-            android:layout_marginLeft="17dp"
-            android:layout_marginStart="17dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"></Button>
@@ -213,8 +213,8 @@
             android:layout_height="55dp"
             android:layout_gravity="right"
             android:src="@mipmap/emergency"
-            android:layout_marginLeft="15dp"
-            android:layout_marginStart="15dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/button_emergency"
             android:layout_toEndOf="@+id/button_emergency" />
