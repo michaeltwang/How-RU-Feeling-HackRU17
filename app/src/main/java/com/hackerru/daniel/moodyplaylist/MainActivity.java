@@ -27,12 +27,18 @@ public class MainActivity extends Activity implements SpotifyPlayer.Notification
 
 
 
+    private static final int REQUEST_CODE = 1337;
 
-    Button Love = (Button) findViewById(R.id.Love);
+    // TODO: Replace with your client ID
+    private static final String CLIENT_ID = "yourclientid";
+    // TODO: Replace with your redirect URI
+    private static final String REDIRECT_URI = "yourcustomprotocol://callback";
+
+    private Player mPlayer;
 
     @Override
-    protected void onCreateURL(Bundle saveInstanceState) {
-        super.onCreate(saveInstanceState);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
 //Intent i = new Intent(.this, MainActivity.class);
         //startActivity(i);LoginActivity
@@ -81,23 +87,8 @@ public class MainActivity extends Activity implements SpotifyPlayer.Notification
                 startActivity(i);
             }
         });
-    }
 
 
-
-
-
-    private static final int REQUEST_CODE = 1337;
-
-    // TODO: Replace with your client ID
-    private static final String CLIENT_ID = "yourclientid";
-    // TODO: Replace with your redirect URI
-    private static final String REDIRECT_URI = "yourcustomprotocol://callback";
-
-    private Player mPlayer;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
