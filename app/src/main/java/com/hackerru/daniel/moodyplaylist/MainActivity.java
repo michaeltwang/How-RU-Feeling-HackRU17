@@ -53,7 +53,7 @@ public class MainActivity extends Activity implements SpotifyPlayer.Notification
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse("http://www.youtube.com"));
+                i.setData(Uri.parse("http://www.google.com"));
                 startActivity(i);
 
             }
@@ -65,7 +65,7 @@ public class MainActivity extends Activity implements SpotifyPlayer.Notification
                 //here comes the code - intent
 
                 Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse("http://www.youtube.com"));
+                i.setData(Uri.parse("http://www.twitter.com"));
                 startActivity(i);
             }
         });
@@ -77,7 +77,7 @@ public class MainActivity extends Activity implements SpotifyPlayer.Notification
                 //here comes the code - intent
 
                 Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse("http://www.youtube.com"));
+                i.setData(Uri.parse("http://www.bing.com"));
                 startActivity(i);
             }
         });
