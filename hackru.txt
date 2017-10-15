@@ -1,0 +1,21 @@
+
+We have developed an Android app called "How RU Feeling?" that displays buttons with different moods on them. 
+
+Clicking on one of seven mood buttons (paired with a suitable mood image) sends you to a Rutgers-related URL link to fit, well, your mood! 
+Examples:
+Feeling sleepy? You'll be sent to the RWBJ Sleep Center website to register for an appointment.
+Feeling unmotivated? You'll be sent to the Rutgers 250 anniversary video that they play at orientation to give you some inspiration.
+We also have an "Emergency" button that sends you to a Rutgers counseling website with contact information for various problems.
+
+How RU Feeling? also has a social aspect to it!
+It has built-in SMS messaging to share your moods with friends as well as the URLs you yourself were directed to.
+We planned to implement a notification system to remind you to do this, and we also wanted to have the URL
+autogenerate in the text message input, but sadly we did not have time to do this.
+
+The Spotify API is used as well to play music to fit the mood. Implementing the Spotify playlist took a really long time
+and headache and yet is not the prominent aspect of the app. It isn't implemented with the rest of the app, it's separate
+because Spotify was the original idea and was scrapped. We were thinking about having background music play, but we again 
+didn't have time to implement this. So if you find some crazy Spotify API stuff in our code and you're wondering why it's 
+there, now you know!
+
+Thank you for taking the time to look at our app! #Rutgers spirit!
