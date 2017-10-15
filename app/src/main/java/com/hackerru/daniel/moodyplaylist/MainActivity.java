@@ -36,6 +36,8 @@ public void onCreate(Bundle savedInstanceState) {
 
     public void goToSad (View view) {
         setContentView(R.layout.sms_message);
+        Intent intent = new Intent(this, SMSMessage.class);
+        startActivity(intent);
     }
 
     public void goToSleepy (View view) {
